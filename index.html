@@ -9,32 +9,57 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
 
     <title>XTutorials</title>
 </head>
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">XTutorials</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul class="nav">
+        <a class="navbar-brand" href="#">XTutorials</a>
+        <ul class="nav" id="navbar">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Videos</a>
+                <a class="nav-link" href="#">Crear cuenta</a>
             </li>
         </ul>
-
     </nav>
     <!--Ends Navbar-->
 
-    <!--Video section-->
-    <div class="container">
-        <div class="row mt-5" id="videos-section"></div>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right border-top" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Página principal</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Tendencias</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Más recientes</a>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Bootstrap</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Spring Boot</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper">
+            <!--Video section-->
+            <div class="container">
+                <div class="row mt-5" id="videos-section"></div>
+            </div>
+            <!--Ends Video section-->
+        </div>
     </div>
-    <!--Ends Video section-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -48,6 +73,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="assets/main.js" type="module"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
 
 </html>

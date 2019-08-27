@@ -35,16 +35,16 @@ function shuffle(array) {
     shuffle(recomendedVideos);
     recomendedVideos = recomendedVideos.slice(1, 4);
 
-    var otherVideos = document.getElementById('other-videos-section');
+    var otherVideosSection = document.getElementById('other-videos-section');
     var content = '';
 
     recomendedVideos.forEach(vid => {
         content += '<div class="card mb-3">';
         content += '<div class="row no-gutters">';
-        content += '<div class="col-md-5">';
+        content += '<div class="col-5">';
         content += '<img src="https://img.youtube.com/vi/' + vid.id +'/maxresdefault.jpg" class="card-img">';
         content += '</div>';
-        content += '<div class="col-md-7">';
+        content += '<div class="col-7">';
         content += '<div class="card-body">';
         content += '<h5 class="card-title">' + vid.title + '</h5>';
         content += '<p class="card-text"> ' + vid.description + ' </p>';
@@ -55,5 +55,5 @@ function shuffle(array) {
         content += '</div>';
     });
 
-    otherVideos.innerHTML = content;
+    otherVideosSection.innerHTML = content;
 })();

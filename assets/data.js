@@ -34,6 +34,13 @@ const videos = [
         longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
         owner: 'Nani'
     },
+    { 
+        id: 'ACPVR-_tiyk', 
+        title: 'Capítulo 6: Collapse', 
+        description: 'Cómo utilizar acordeones. Haremos una página de F.A.Q que los utilizará.',
+        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
+        owner: 'Nani'
+    },
 
 ];
 
