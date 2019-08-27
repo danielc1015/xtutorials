@@ -2,9 +2,10 @@ import { videos } from './data.js'
 
 var url = new URL(window.location.href);
 var id = url.searchParams.get('id');
-
 var video = videos.filter( vid => vid.id == id )[0];
 
+// Check if video exists
+!video ? location.href = '/' : null;
 
 // Shuffle an array
 function shuffle(array) {
@@ -29,7 +30,6 @@ function shuffle(array) {
 
 // Insert recomended videos list
 (() => {
-    
     // Delete actual video from the list and shuffle
     var recomendedVideos = videos.filter(element =>  element.id != video.id );
     shuffle(recomendedVideos);
@@ -56,5 +56,4 @@ function shuffle(array) {
     });
 
     otherVideos.innerHTML = content;
-    
 })();
