@@ -1,27 +1,31 @@
 const videos = [
     { 
-        id: 'biyvpvx9I7E', 
-        title: 'Progress en BT', 
+        id: 'nOTaiRW3BFY', 
+        title: 'Capítulo 1: Cards', 
         description: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.'
+        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
+        owner: 'Daniel C'
     },
     { 
-        id: 'aFlRn1vEMQI', 
-        title: 'Progress en BT', 
+        id: 'hQipdSULqgU', 
+        title: 'Capítulo 2: Progress', 
         description: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.'
+        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
+        owner: 'Daniel C'
     },
     { 
-        id: 'biyvpvx9I7E', 
-        title: 'Progress en BT', 
+        id: 'MOG6rvn2Fq4', 
+        title: 'Capítulo 3: Buttons', 
         description: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.'
+        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
+        owner: 'El Chri'
     },
     { 
-        id: 'MjB1Nyx6hns', 
-        title: 'Progress en BT', 
+        id: 'YRTYXWeMDbw', 
+        title: 'Capítulo 4: Alerts', 
         description: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.'
+        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
+        owner: 'El Chri'
     },
     { 
         id: 'MjB1Nyx6hns', 

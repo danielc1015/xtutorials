@@ -11,10 +11,12 @@ var video = videos.filter( vid => vid.id == id )[0];
     var mainVideo = document.getElementById('main-video');
     var mainVideoDescription = document.getElementById('main-video-description');
     var mainVideoTitle = document.getElementById('main-video-title');
+    var mainVideoOwner = document.getElementById('main-video-owner');
 
     mainVideo.setAttribute("src", "https://www.youtube.com/embed/" + video.id);
     mainVideoDescription.innerHTML = video.longDescription;
     mainVideoTitle.innerHTML = video.title;
+    mainVideoOwner.innerHTML = video.owner;
 })();
 
 // Insert recomended videos list
@@ -33,6 +35,7 @@ var video = videos.filter( vid => vid.id == id )[0];
         content += '<div class="card-body">';
         content += '<h5 class="card-title">' + vid.title + '</h5>';
         content += '<p class="card-text"> ' + vid.description + ' </p>';
+        content += '<a href="video.html?id=' + vid.id + '" class="stretched-link"></a>';
         content += '</div>';
         content += '</div>';
         content += '</div>';
