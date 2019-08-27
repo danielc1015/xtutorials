@@ -6,6 +6,14 @@ var id = url.searchParams.get('id');
 var video = videos.filter( vid => vid.id == id )[0];
 
 
+// Shuffle an array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 // Insert main video data
 (() => {
     var mainVideo = document.getElementById('main-video');
@@ -21,8 +29,13 @@ var video = videos.filter( vid => vid.id == id )[0];
 
 // Insert recomended videos list
 (() => {
+    
+    // Delete actual video from the list and shuffle
+    var recomendedVideos = videos.filter(element =>  element.id != video.id );
+    shuffle(recomendedVideos);
+    recomendedVideos = recomendedVideos.slice(1, 4);
+
     var otherVideos = document.getElementById('other-videos-section');
-    var recomendedVideos = videos.slice(1, 4);
     var content = '';
 
     recomendedVideos.forEach(vid => {
@@ -34,7 +47,6 @@ var video = videos.filter( vid => vid.id == id )[0];
         content += '<div class="col-md-7">';
         content += '<div class="card-body">';
         content += '<h5 class="card-title">' + vid.title + '</h5>';
-        content += '<hr>';
         content += '<p class="card-text"> ' + vid.description + ' </p>';
         content += '<a href="video.html?id=' + vid.id + '" class="stretched-link"></a>';
         content += '</div>';
