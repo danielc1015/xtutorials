@@ -34,6 +34,7 @@ var video = videos.filter( vid => vid.id == id )[0];
         content += '<div class="col-md-7">';
         content += '<div class="card-body">';
         content += '<h5 class="card-title">' + vid.title + '</h5>';
+        content += '<hr>';
         content += '<p class="card-text"> ' + vid.description + ' </p>';
         content += '<a href="video.html?id=' + vid.id + '" class="stretched-link"></a>';
         content += '</div>';

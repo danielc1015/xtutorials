@@ -28,10 +28,11 @@ const videos = [
         owner: 'El Chri'
     },
     { 
-        id: 'MjB1Nyx6hns', 
-        title: 'Ejemplo Chris', 
+        id: 'b997GSZi9Fo', 
+        title: 'Capítulo 5: Pagination', 
         description: 'Este es u ejejemplo hay que ponr una descripcion brebe por estos lados. ajja xd',
-        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.'
+        longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
+        owner: 'Nani'
     },
 
 ];
