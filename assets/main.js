@@ -1,13 +1,24 @@
 // Import videos data
 import { videos } from "./data.js";
 
+var url = new URL(window.location.href);
+var youtuber = url.searchParams.get('youtuber');
+var featuredVideos;
+
+if (youtuber) {
+    // Filter by youtuber
+    featuredVideos = videos.filter(video =>  video.owner == youtuber);
+} else {
+    featuredVideos = videos;
+}
+
 // Insert each video into videos section
 (() => {
     var section = document.getElementById('videos-section'); //$("#videos-section");
     var content = '';
 
-    videos.forEach((video) => {
-        
+    featuredVideos.forEach((video) => {
+
         content += '<div class="col-md-3 mb-3">';
         content += '<div class="card">';
         content += '<div class="embed-responsive embed-responsive-16by9">';
@@ -20,9 +31,11 @@ import { videos } from "./data.js";
         content += '</div>';
         content += '</div>';
         content += '</div>';
-        
+
     });
 
     section.innerHTML = content;
 })()
+
+
 
