@@ -2,10 +2,11 @@ import { videos } from './data.js'
 
 var url = new URL(window.location.href);
 var id = url.searchParams.get('id');
+
 var video = videos.filter( vid => vid.id == id )[0];
 
 // Check if video exists
-!video ? location.href = '/' : null;
+!video ? location.href = '/bootstrap' : null;
 
 // Shuffle an array
 function shuffle(array) {
@@ -48,10 +49,10 @@ function shuffle(array) {
         content += '<div class="card-body">';
         content += '<h5 class="card-title">' + vid.title + '</h5>';
         content += '<p class="card-text"> ' + vid.description + ' </p>';
+        content += '</div>';
+        content += '</div>';
+        content += '</div>';
         content += '<a href="video.html?id=' + vid.id + '" class="stretched-link"></a>';
-        content += '</div>';
-        content += '</div>';
-        content += '</div>';
         content += '</div>';
     });
 
