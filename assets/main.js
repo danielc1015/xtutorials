@@ -5,12 +5,7 @@ var url = new URL(window.location.href);
 var youtuber = url.searchParams.get('youtuber');
 var featuredVideos;
 
-if (youtuber) {
-    // Filter by youtuber
-    featuredVideos = videos.filter(video =>  video.owner == youtuber);
-} else {
-    featuredVideos = videos;
-}
+featuredVideos = youtuber ? videos.filter(video => video.owner == youtuber) : videos;
 
 // Insert each video into videos section
 (() => {
