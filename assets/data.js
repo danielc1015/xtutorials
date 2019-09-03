@@ -4,42 +4,42 @@ const videos = [
         title: 'Capítulo 1: Cards', 
         description: 'Crea tarjetas personalizables a tu gusto con este gran componente de Boostrap.',
         longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        owner: 'Daniel C'
+        owner: 'Daniel'
     },
     { 
         id: 'hQipdSULqgU', 
         title: 'Capítulo 2: Progress', 
         description: 'Barras de progreso utilizando componente de bootstrap. Aprende ahora.',
         longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        owner: 'Daniel C'
+        owner: 'Daniel'
     },
     { 
         id: 'MOG6rvn2Fq4', 
         title: 'Capítulo 3: Buttons', 
         description: 'Aprende a utilizar todo el estilo de los botones que propociona bootstrap.',
         longDescription: 'Un botón desencadena un evento, para llevar una acción.',
-        owner: 'El Chri'
+        owner: 'Christhoper'
     },
     { 
         id: 'YRTYXWeMDbw', 
         title: 'Capítulo 4: Alerts', 
         description: 'Aprende a mostrar notificaciones con Bootstrap cuando se genera una acción',
         longDescription: 'Una alerta se encarga de mostrar en pantalla algún evento a ocurrir al momento de generar una acción.',
-        owner: 'El Chri'
+        owner: 'Christhoper'
     },
     { 
         id: 'dqUl11DZl1I', 
         title: 'Capítulo 5: Forms', 
         description: 'Cómo usar los formularios y sus componentes internos en bootstrap',
         longDescription: 'Un forms se encarga de hacer un formulario para rellenar con datos que el usuario desea.',
-        owner: 'Chri'
+        owner: 'Christhoper'
     },
     { 
         id: 'ACPVR-_tiyk', 
         title: 'Capítulo 6: Collapse', 
         description: 'Cómo utilizar acordeones. Haremos una página de F.A.Q que los utilizará.',
         longDescription: 'Barras de progreso utilizando componente de bootstrap. Uso y detalles extra.',
-        owner: 'Daniel C'
+        owner: 'Daniel'
     },
     { 
         id: 'UcT1oTETbvg', 
@@ -60,14 +60,14 @@ const videos = [
         title: 'Capítulo 9: List Group', 
         description: 'Permite mostrar listados que están formados por elementos complejos',
         longDescription: 'Es bastante flexible lo que lo hace poderoso ya que permite mostrar listados que están formados por elementos complejos.',
-        owner: 'Naninator'
+        owner: 'Hernan'
     },
     { 
         id: '-s9JjfupWy8', 
         title: 'Capítulo 10: Carousel', 
         description: 'Aprende a usar pasos de diapositivas ya sean animadas o estáticas',
         longDescription: 'El componente carousel consiste en un paso de diapositivas estas pueden ser animadas o estáticas, se utiliza en sitios web que necesiten publicidad.',
-        owner: 'Nana'
+        owner: 'Hernan'
     },
     { 
         id: 'op2g1dNdAOQ', 
